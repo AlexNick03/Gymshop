@@ -16,7 +16,7 @@ __pycache__/
 *.tmp
 *.swp
 *.bak
-
+media/
 db.sqlite3
 
 venv/
