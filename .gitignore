@@ -16,6 +16,7 @@ __pycache__/
 *.tmp
 *.swp
 *.bak
+# 🔥 Fișiere IMPORTANTE
 media/
 db.sqlite3
 
