@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="main-section">
+    <div class="preset_div">
+        {% if form.errors %}
+        <div id="message-container" class="error-container">
+            <span id="error-message">
+                {% for field, errors in form.errors.items %}
+                    {{ errors.0 }} <br>
+                {% endfor %}
+            </span>
+        </div>
+        {% endif %}
+        <div class="form-container">
+            <form id="PasswordResetForm"  method="POST">
+                {% csrf_token %}
+                <h2>Set your new password</h2>
+                <div class ="form-group">
+                   {{ form.password1 }}
+                </div>
+                <div class ="form-group">
+                    {{ form.password2 }}
+                </div> 
+                <button class="button" type="submit">Change Passwords</button>
+                <p>Changed your mind ? <a href="{% url 'sign-in'%}">Back to Log-in</a></p>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

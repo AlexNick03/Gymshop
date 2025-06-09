@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+{% if messages %}
+    {% for message in messages %}
+        <div id="message-container" class = "success-container">
+            {{ message }}
+        </div>
+    {% endfor %}
+    
+{% endif %}
+
+
+<div class="product">
+  
+    <div class="p_image">
+        <img src="{{ product.image.url }}" alt="{{ product.title }}" class="product-image">
+    </div>
+    
+    <div class="p_details">
+        <div class="p_dsc">
+            <h1>{{ product.title }}</h1>
+            <p>{{ product.description }}</p>
+        </div>
+        
+        <form name = "addItemForm" method="POST" action="{% url 'add_cart' %}">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ product.pid }}">
+        <div class="p_buy">
+            <div class="basket_img">
+                <img src="{%static 'assets/images/basket.png'%}" alt="Basket" class="basket_icon">
+            </div>    
+            <div class="p_price">
+                <h2>{{ product.price }} RON</h2>
+                {% if product.stock <= 10 %}
+                <p class="stock-warning">Stoc limitat! Doar {{procuct.stock}} bucati ramase</p>
+                <input type="number" name = "quantity" value="1" min="1" max = "{{product.stock}}" class="quantity-input">
+                {% else %}
+                <input type="number" name = "quantity" value="1" min="1" max = "10" class="quantity-input">
+                {% endif %}
+            </div>
+            <div class="buy_button">
+                <button class="button" type="submit" >Adaugă în coș</button>
+            </div>        
+        </div>  
+        </form>      
+    </div>
+        
+
+</div>
+{%endblock content%}

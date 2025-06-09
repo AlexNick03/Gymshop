@@ -1,0 +1,35 @@
+{% load static %}
+<div class="footer-main" id="footer-main">
+    <div class="footer-upper">
+        <div class="footer-section">
+            <p><a href="{% url 'terms' %}">Terms & Conditions</a></p>
+            <p><a href="{% url 'about' %}">About Us</a></p>
+            <p><a href="{% url 'privacy' %}">Privacy</a></p>
+            <p><a href="{% url 'contact' %}">Contact Us</a></p>
+            <p><a href="{% url 'refund' %}">Return Policy</a></p>
+        </div>
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+            <div class="social-media-links">
+                <a href="#" target="_blank">
+                    <img src="{% static 'assets/images/instagram.png'%}" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="{%static 'assets/images/facebook.png'%}" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Gym Shop 2024. All rights reserved.</p>
+        <div class="payment-methods">
+            <img src="{% static 'assets/images/visa.png' %}" alt="Visa" class="pM-img">
+            <img src="{% static 'assets/images/mastercard.png'%}" alt="Mastercard" class="pM-img">
+            <img src="{%static 'assets/images/paypal.png'%}" alt="PayPal" class="pM-img">
+        </div>
+    </div>
+</div>

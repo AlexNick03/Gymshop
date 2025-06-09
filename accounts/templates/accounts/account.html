@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+
+
+{% block content %}
+<div class="user-interface">
+    <div class="user-profile">
+        <h2><span class="username">{{user.username}}</span>!</h2>
+        <p><span class="username">Joined at {{ user.date_joined|date:"d M Y" }}</span>!</p>
+    </div>
+    <div class="user-actions">
+        <button class="action-btn">Informații</button>
+        <button class="action-btn">Setări</button>
+        <button class="action-btn">Istoric Comenzi</button>
+        <a href = "{%url 'sign-out'%}"><button class="logout-btn" >Log Out</button></a>
+    </div>
+</div>    
+{% endblock content %}

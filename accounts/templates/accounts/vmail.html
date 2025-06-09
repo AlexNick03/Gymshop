@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{ user }},
+Please click the link below to validate your registration:
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+This link will expire in 5 miuntes.
+{% endautoescape %}
+

@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<div class="suplimente">
+    
+    <div id="product-container" class = "product_container">
+        {% for product in page_obj %}
+        <a href="{% url 'product' p_title=product.title p_id=product.pid %}" class="product-link">
+            <div class="product-item">
+                <img src= "{{ product.image.url }}" alt="TITLE">
+                <h2>{{ product.title }}</h2>
+            </div>
+        </a>
+         {% endfor %}    
+        </div>
+   
+    
+
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}", class = "active">Înapoi</a>
+        {% endif %}
+        {% for page in page_obj.paginator.page_range %}
+        {% if page == page_obj.number %}
+        <a  class="not_active">{{ page }}</a>
+        {% else %}
+        <a href="?page={{ page }}", class = "active">{{ page }}</a>
+        {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}", class = "active">Înainte</a>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}

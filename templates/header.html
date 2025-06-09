@@ -1,0 +1,36 @@
+{% load static %}
+<div id="header_id" class="header">
+    <div class="header_el">
+        <div id="upper_header">
+            <div id="logo_cont" class="upp_cont">
+                <a href="/" class="home_b"><img src="{% static 'assets/images/logo.png'%}" class="logo_img" alt="Logo"></a>
+            </div>
+            <div id="search_bar" class="upp_cont">
+                <img src="{%static 'assets/images/search.png'%}" class="search_icon" alt="Search">
+                <input type="text" placeholder="Search.." class="s_bar">
+            </div>
+            <div id="buy_acc" class="upp_cont">
+                <a href="{% url 'cart' %}"><img src="{%static 'assets/images/basket.png' %}" class="basket_icon" alt="Basket"></a>
+               
+                   {% if user.is_authenticated %}
+                    <div class="account-dropdown">
+                        <a href= "{% url 'account'%}" ><img src="{% static 'assets/images/account.png' %} " class="acc_icon" alt="Account"><a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'account'%}">Account</a></li>
+                            <li><a href="{% url 'sign-out' %}">Log Out</a></li>
+                        </ul>
+                    
+                    </div>
+                    
+                    {% else %}
+                    <a href="{% url 'sign-in' %}" class="login_button">Login</a>
+                    {% endif %}
+            </div>
+        </div>
+        <div id="lower_header">
+            <a class="sHbutton" id="supB" href="{% url 'suplimente' %}">Suplimente</a>
+            <a class="sHbutton" id="imbracaminteB" href="{%url 'haine' %}">Imbracaminte</a>
+         
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{ user }},
+Please click the link below to reset your password:
+
+http://{{ domain }}{% url 'password-reset-confirm' uidb64=uid token=token %}
+
+This link will expire in 5 miuntes.
+{% endautoescape %}
+

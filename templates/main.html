@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymShop</title>
+    <link rel="stylesheet" href="{% static 'assets/css/header.css' %}">      
+    <link rel="stylesheet" href="{% static 'assets/css/footer.css' %}">       
+    <link rel="stylesheet" href="{% static 'assets/css/banner.css' %}">       
+    <link rel="stylesheet" href="{% static 'assets/css/popular.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/footer_elements.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/login_signup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/account.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/popular.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/suplimente.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/basket.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/product.css' %}">
+    <script src="{%static 'assets/js/warning.js' %}"></script>
+    <script src="{%static 'assets/js/banner.js' %}"></script>
+</head>
+<body>
+    
+    {% include 'header.html' %}
+    <div class = "wrapper">
+    {% block content %}
+
+    {% endblock content %}
+    </div>
+    {% include 'footer.html' %}
+</body>
+
+</html>

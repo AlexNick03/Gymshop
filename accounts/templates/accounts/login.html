@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="main-section">
+    <div class="login-div">
+        
+        <div class="form-container">
+        {% if messages %}
+            {% for message in messages %}
+            {% if message.tags == error %}
+            <div id="message-container" class = "error-container">
+                <strong>{{message}}</strong>
+            </div>
+           
+            {% else %}
+            {% if message.tags == success %}
+            <div id="message-container" class = "success-container">
+                <strong>{{message}}</strong>
+            </div>
+            {% else %}
+            <div id="message-container" class = "warning-container">
+                <strong>{{message}}</strong>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        {% endif %}
+            <form id="loginForm"  method="POST">
+                {% csrf_token %}
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button class="button" type="submit">Login</button>
+                <p>Don't have an account? <a href="{% url 'sign-up'%}">Sign Up</a></p>
+                <p>Forgot your password ? <a href="{% url 'password-reset'%}">Reset Password</a></p>
+            </form>
+        </div>
+        
+    
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="main-section">
+    <div class="login-div">
+        
+        <div class="form-container">
+        {% if messages %}
+            {% for message in messages %}
+            {% if message.tags == error %}
+            <div id="message-container" class = "error-container">
+                <strong>{{message}}</strong>
+            </div>
+           
+            {% else %}
+            {% if message.tags == success %}
+            <div id="message-container" class = "success-container">
+                <strong>{{message}}</strong>
+            </div>
+            {% else %}
+            <div id="message-container" class = "warning-container">
+                <strong>{{message}}</strong>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        {% endif %}
+            <form id="presetForm"  method="POST">
+                {% csrf_token %}
+                <h2>Reset your password</h2>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button class="button" type="submit">Send recovery link</button>
+                <p>Remebered your data ?  <a href="{% url 'sign-in'%}">Back to Log-in</a></p>
+            </form>
+        </div>
+        
+    
+    </div>
+</div>
+
+{% endblock content %}

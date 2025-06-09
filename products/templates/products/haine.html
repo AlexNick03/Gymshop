@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="suplimente">
+    <a href="">
+    <div id="product-container">
+        <div class="product-item">
+            <img src="IMAGE_URL" alt="TITLE">
+            <h2>TITLE</h2>
+        </div>
+        <p>Nu există suplimente disponibile.</p>
+    </div>
+    </a>    
+    <div class="pagination">
+        <a href="index.php?page=haine&page_number=PREVIOUS_PAGE">Înapoi</a>
+        <a href="index.php?page=haine&page_number=PAGE_NUMBER" class="active">PAGE_NUMBER</a>
+        <a href="index.php?page=haine&page_number=NEXT_PAGE">Înainte</a>
+    </div>
+</div>   
+{% endblock content %}
