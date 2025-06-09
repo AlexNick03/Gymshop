@@ -1,0 +1,23 @@
+.env
+# 🔥 Cache Python
+__pycache__/
+*.py[cod]
+*.so
+
+# 🔥 Cache în directoarele de migrații
+**/migrations/__pycache__/
+
+# 🔥 Cache editori
+.vscode/
+.idea/
+
+# 🔥 Fișiere temporare
+*.log
+*.tmp
+*.swp
+*.bak
+
+db.sqlite3
+
+venv/
+.venv/
