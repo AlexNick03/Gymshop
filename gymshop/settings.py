@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'products.apps.ProductsConfig',
     'accounts.apps.AccountsConfig',
     'verify_email.apps.VerifyEmailConfig',
-    'taggit'
+    'taggit',
+    "django_htmx"
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    "django_htmx.middleware.HtmxMiddleware"
 
 ]
 

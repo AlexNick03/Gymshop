@@ -1,0 +1,22 @@
+{% for item in page_obj %}
+<div class="cart-item">
+    <img src="{{ item.product.image.url }}">
+    <h3>{{ item.product.title }}</h3>
+    <p>{{ item.product.price }} lei</p>
+    <p>{{ item.quantity }}</p>
+    <p>{{ item.subtotal }} lei</p>
+    <button>
+        <a href="">Delete</a>
+    </button>
+</div>
+
+{% if page_obj.has_next and forloop.last %}
+  <span 
+    hx-get="{% url 'cart' %}?page={{ page_obj.next_page_number }}"
+    hx-swap="beforeend"
+    hx-target="#cart-items"
+    hx-selector=".cart-item"
+    hx-trigger="revealed"
+  ></span>
+{% endif %}
+{% endfor %}

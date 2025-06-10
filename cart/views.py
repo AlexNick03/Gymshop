@@ -4,10 +4,25 @@ from .models import Cart, CartItem
 from django.shortcuts import redirect
 from products.models import Product
 from django.contrib import messages
+from django.core.paginator import Paginator
+
 
 def cart(request):
     if request.user.is_authenticated:
-        return render(request, 'cart/cart.html')
+        cart  = Cart.objects.get(user = request.user)
+        items = CartItem.objects.filter(cart=cart)
+        page_number = request.GET.get('page',1)
+        paginator  = Paginator(items, 1)
+        page_obj =  paginator.get_page(page_number)
+        cart_total = cart.cart_total
+        if request.headers.get("HX-Request") == "true":
+
+            return render(request, "cart/cart_partial.html", {"page_obj": page_obj,
+                                                              "cart_total": cart_total})
+        else:
+            return render(request, "cart/cart.html", {"page_obj": page_obj,
+                                                      "cart_total": cart_total})
+    
     else:
         messages.error(request, 'You must be logged in to access your cart.')
         return redirect('sign-in')

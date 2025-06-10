@@ -1,12 +1,32 @@
 {% extends "main.html" %}
-
 {% block content %}
-<div class = "basket-coninter">
 
-    <div class = "main-title">
-    <h1>Nu exista produse in cos !!!</h1>
+<div id="cart">
+  <div class="cart-container">
+    
+    <div class="cart-left">
+    <div class="cart-top">
+        <p>Produs</p>
+        <p>Descriere</p>
+        <p>Preț</p>
+        <p>Cantitate</p>
+        <p>Subtotal</p>
     </div>
 
-
+    <div id="cart-items">
+        {% include "cart/cart_partial.html" %}
+    </div>
 </div>
+
+    <div class="cart-right">
+      <div class="cart-total">
+        <h3>Cart Total</h3>
+        <p>{{ cart_total }} lei</p>
+      </div>
+      <button><a href="">Checkout</a></button>
+    </div>
+
+  </div>
+</div>
+
 {% endblock content %}
