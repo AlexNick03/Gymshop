@@ -1,13 +1,25 @@
 {% for item in page_obj %}
 <div class="cart-item">
-    <img src="{{ item.product.image.url }}">
+  <div class="cart-row">
+    <img src="{{ item.product.image.url }}" alt="{{ item.product.title }}">
     <h3>{{ item.product.title }}</h3>
     <p>{{ item.product.price }} lei</p>
-    <p>{{ item.quantity }}</p>
+
+    <form method="POST" action="{% url 'change_quantity' item.product.pid %}" class="quantity-form">
+        {% csrf_token %}
+        <input type="number" name="quantity" value="{{ item.quantity }}" min="1">
+        <button class="change-btn">Change</button>
+    </form>
+
     <p>{{ item.subtotal }} lei</p>
-    <button>
-        <a href="">Delete</a>
-    </button>
+  </div>
+
+  <div class="cart-actions">
+    <form method="POST" action="{% url 'remove_item' item.product.pid %}">
+        {% csrf_token %}
+        <button class="delete-btn">Delete</button>
+    </form>
+  </div>
 </div>
 
 {% if page_obj.has_next and forloop.last %}

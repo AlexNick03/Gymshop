@@ -48,5 +48,15 @@ def add_cart(request):
         messages.success(request, f'{product.title} has been added to your cart.')
         return redirect('product', p_id=product.pid, p_title=product.title)
 
-def remove_cart(request, p_id):
-    pass
+def change_quantity(request, p_id):
+    if request.method == 'POST':
+        quantity = request.POST.get('quantity')
+        item = CartItem.objects.get(product__pid=p_id)
+        item.quantity = quantity
+        item.save()
+        return redirect('cart')
+def remove_item(request, p_id):
+    if request.method == 'POST':
+        item = CartItem.objects.get(product__pid=p_id)
+        item.delete()
+        return redirect('cart')
