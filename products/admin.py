@@ -8,7 +8,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)    
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['pid', 'title', 'stock','price', 'old_price', 'is_available', 'category', 'date', 'updated', 'get_precent_discount']
+    list_display = ['pid', 'title', 'stock','price', 'is_available', 'category', 'date', 'updated'] 
     search_fields = ['title', 'pid', 'category__title']
 admin.site.register(Product, ProductAdmin)
 

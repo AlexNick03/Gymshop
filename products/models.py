@@ -19,11 +19,11 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    pid = ShortUUIDField(unique=True, length=10, max_length=30, prefix='prd', alphabet='abcdefgh12345')
+    pid = ShortUUIDField(unique=True ,length=10, max_length=30, prefix='prd', alphabet='abcdefgh12345')
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='product_images', null=True, blank=True)
     price = models.DecimalField(max_digits=100000, decimal_places=2, default=1.99)
-    old_price = models.DecimalField(max_digits=100000, decimal_places=2, null=True, blank=True, default=2.99)
+    #old_price = models.DecimalField(max_digits=100000, decimal_places=2, null=True, blank=True, default=2.99)
     description = models.TextField(null=True, blank=True, default='This is the product')
     is_available = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
@@ -43,9 +43,9 @@ class Product(models.Model):
             return mark_safe('<img src="%s" width="50" height="50" />' % (self.image.url))
     def __str__(self):
             return self.title
-    def get_precent_discount(self):
-            new_price = (self.price/self.old_price) * 100
-            return new_price
+    #def get_precent_discount(self):
+            #new_price = (self.price/self.old_price) * 100
+            #return new_price
     
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
