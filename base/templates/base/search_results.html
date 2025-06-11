@@ -1,0 +1,7 @@
+{% for product in products %}
+  <div class="search-item">
+    <a href="{% url 'product' p_title=product.title p_id=product.pid %}">{{ product.title }}</a>
+  </div>
+{% empty %}
+  <div class="search-item">Niciun rezultat</div>
+{% endfor %}

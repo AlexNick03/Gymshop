@@ -1,3 +1,4 @@
+
 body, html{
     padding: 0px;
     margin: 0px;
@@ -138,6 +139,7 @@ body, html{
         margin-top: -4px;
         border-radius: 20px;
         background-color: black;
+        color: white;
     }
 #lower_header {
    display: flex;
@@ -154,4 +156,40 @@ body, html{
     text-decoration: none;
     font-size: 25px;
     
+}
+#search_bar {
+    position: relative;
+}
+
+/* Dropdown-ul cu rezultate */
+#search-results {
+    position: absolute;
+    top: 110%; /* puțin sub input */
+    left: 0;
+    width: 100%; /* la fel ca inputul */
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 5000;
+    display: none;
+}
+
+/* Fiecare item */
+.search-item {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-item:hover {
+    background-color: #2e2e2e;
 }

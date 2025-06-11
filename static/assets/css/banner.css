@@ -7,6 +7,7 @@
     position: relative;
     margin-top: 40px;
     margin-bottom: 40px;
+    z-index: 0;
     
 }
 
@@ -17,6 +18,7 @@
     top: 0px;
     transition: all ease-in-out 750ms;
     -webkit-transition: all ease-in-out 750ms;
+    z-index: 0;
 }
 .main-banner #imgban3{
 
@@ -24,6 +26,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 .main-banner #imgban2{
 
@@ -31,6 +34,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 .main-banner #imgban1{
 
@@ -38,6 +42,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 
 #imgban2 .imgban-box {
@@ -47,6 +52,7 @@
     align-self: top;
     padding-bottom: 10px;
     padding-left: 122px;
+    z-index: 0;
 }
 #imgban3 .imgban-box{
 
@@ -56,6 +62,7 @@
     color:#fff;
     align-self: center;
     padding-top: 80px;
+     z-index: 0;
 }
 #imgban1 .imgban-box{
     width: 400px;
@@ -66,4 +73,5 @@
     align-self: left;
     padding-top: 50px;
     padding-left: 30px;
+     z-index: 0;
 }
