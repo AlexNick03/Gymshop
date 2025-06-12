@@ -2,6 +2,21 @@
 {% block content %}
 
 <div id="cart">
+  {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == error %}
+        <div id="message-container" class = "erorr-container">
+            {{ message }}
+        </div>
+    {% else %}
+        <div id="message-container" class = "warning-container">
+                <strong>{{message}}</strong>
+        </div>
+    {% endif %}
+
+    {% endfor %}
+    
+{% endif %}
   <div class="cart-container">
     
     <div class="cart-left">
@@ -23,7 +38,15 @@
         <h3>Cart Total</h3>
         <p>{{ cart_total }} lei</p>
       </div>
-      <button><a href="">Checkout</a></button>
+      <form method="POST" action="{% url 'checkout' %}">
+        {% csrf_token %}
+        <input type="hidden" name="cart_cid" value="{{ cart_cid }}">
+        {% if cart_total == 0 %}
+        <button class="checkout-btn" disabled>No items in the cart</button>
+        {% else %}
+        <button class="checkout-btn" >Checkout</button>
+        {% endif %}
+      </form >  
     </div>
 
   </div>

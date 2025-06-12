@@ -33,16 +33,27 @@
             </div>    
             <div class="p_price">
                 <h2>{{ product.price }} RON</h2>
-                {% if product.stock <= 10 %}
-                <p class="stock-warning">Stoc limitat! Doar {{procuct.stock}} bucati ramase</p>
+                {% if product.stock <= 10 and product.stock > 0 %}
+                <p class="stock-warning">Stoc limitat! Doar {{product.stock}} bucati ramase</p>
                 <input type="number" name = "quantity" value="1" min="1" max = "{{product.stock}}" class="quantity-input">
+                {% else %}
+                {% if product.stock == 0 %}
+                <p class="stock-warning">Stoc epuizat</p>
+                <input type="number" name = "quantity" value="0" min="0" max = "0" disabled class="quantity-input">
                 {% else %}
                 <input type="number" name = "quantity" value="1" min="1" max = "10" class="quantity-input">
                 {% endif %}
+                {% endif %}
             </div>
+             {% if product.stock == 0 %}
+               <div class="buy_button">
+                <button class="button" type="submit" disabled>Stoc epuizat</button>
+            </div>
+            {% else %}
             <div class="buy_button">
                 <button class="button" type="submit" >Adaugă în coș</button>
-            </div>        
+            </div> 
+            {% endif %}       
         </div>  
         </form>      
     </div>

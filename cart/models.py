@@ -1,7 +1,9 @@
 from django.db import models
 from products.models import Product
 from accounts.models import User
+from shortuuid.django_fields import ShortUUIDField
 class Cart(models.Model):
+    cid = ShortUUIDField(unique=True,auto_created=True ,length=10, max_length=30, prefix='cart', alphabet='abcdefgh12345')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     cart_total = models.PositiveIntegerField(default = 0)

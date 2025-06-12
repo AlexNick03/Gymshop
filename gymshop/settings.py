@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #custom app
     'base.apps.BaseConfig',
     'debug_toolbar',
+    'orders.apps.OrdersConfig',
     'cart.apps.CartConfig',
     'products.apps.ProductsConfig',
     'accounts.apps.AccountsConfig',

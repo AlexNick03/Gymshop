@@ -12,6 +12,7 @@ urlpatterns = [
     path('',include('products.urls')),
     path('',include('accounts.urls')),
     path('',include('cart.urls')),
+    path('',include('orders.urls')),
     path('verification/', include('verify_email.urls')),
 ] + debug_toolbar_urls()
 

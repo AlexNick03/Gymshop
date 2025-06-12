@@ -15,13 +15,16 @@ def cart(request):
         paginator  = Paginator(items, 1)
         page_obj =  paginator.get_page(page_number)
         cart_total = cart.cart_total
+        cart_id = cart.cid
         if request.headers.get("HX-Request") == "true":
 
             return render(request, "cart/cart_partial.html", {"page_obj": page_obj,
-                                                              "cart_total": cart_total})
+                                                              "cart_total": cart_total,
+                                                              "cart_cid": cart_id})
         else:
             return render(request, "cart/cart.html", {"page_obj": page_obj,
-                                                      "cart_total": cart_total})
+                                                      "cart_total": cart_total,
+                                                      "cart_cid": cart_id})
     
     else:
         messages.error(request, 'You must be logged in to access your cart.')

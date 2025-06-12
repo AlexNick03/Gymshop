@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("search-input");
-const resultsBox = document.getElementById("search-results");
+  const resultsBox = document.getElementById("search-results");
 
 input.addEventListener("input", function () {
     const query = this.value.trim();
