@@ -18,7 +18,7 @@ __pycache__/
 *.bak
 # 🔥 Fișiere IMPORTANTE
 media/
-db.sqlite3
+
 
 venv/
 .venv/
