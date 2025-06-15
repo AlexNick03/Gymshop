@@ -6,11 +6,14 @@ from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth import login, authenticate , logout
 from accounts.models import User
+from django.http import HttpResponse
 from django.utils.encoding import force_str
 from django.contrib.auth import get_user_model
 from .tokens import account_activation_token
+from orders.models import Order
 from django.template.loader import render_to_string
 from cart.models import Cart
+from django.core.paginator import Paginator
 from django.core.mail import EmailMessage
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.http import urlsafe_base64_encode
@@ -187,3 +190,22 @@ def password_reset_confirm(request, uidb64, token):
 def create_cart(request, user):
    cart = Cart.objects.create(user=user)
    cart.save()
+
+def order_history(request):
+    if not request.user.is_authenticated:
+        messages.error(request, 'You must be logged in to view your order history.')
+        return redirect('sign-in')
+    return render(request, 'accounts/order_history.html')
+def order_history_api(request):
+    if not request.user.is_authenticated:
+        messages.error(request, 'You must be logged in to view your order history.')
+        return redirect('sign-in')
+    user = request.user
+    orders = Order.objects.filter(user=user).order_by('-created_at')
+    paginator = Paginator(orders, 5)
+    page_number = request.GET.get('page',1)
+    try:
+        page_obj = paginator.page(page_number)
+    except page_number < paginator.num_pages:
+        return HttpResponse("")
+    return render(request, "accounts/order_items_partial.html", {"orders": page_obj})

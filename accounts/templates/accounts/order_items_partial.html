@@ -1,0 +1,10 @@
+
+{% for order in orders %}
+    <div class = order-item>
+    <h2>Comanda #{{order.oid}}</h2>
+    <p><span class="username">Plasat: {{order.created_at|date:"d M Y" }}</span>!</p>
+    <p><span class="username">Status: {{order.status}}</span>!</p>
+    <p><span class="username">Total: {{order.total}} lei</span>!</p>
+    <p><span class="username">Adresa de livrare: {{order.country}} {{order.county}} {{order.city}} {{odert.postal_code}} {{order.adress}}</span>!</p>
+    </div>    
+{% endfor %}
