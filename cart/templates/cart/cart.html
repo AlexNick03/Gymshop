@@ -9,9 +9,15 @@
             {{ message }}
         </div>
     {% else %}
+    {% if message.tags == success %}
+            <div id="message-container" class = "success-container">
+                <strong>{{message}}</strong>
+            </div>
+    {% else %}
         <div id="message-container" class = "warning-container">
                 <strong>{{message}}</strong>
         </div>
+      {% endif %}    
     {% endif %}
 
     {% endfor %}

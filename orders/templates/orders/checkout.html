@@ -2,28 +2,25 @@
 {% block content %}
 <div class="checkout-container">
     <div class="checkout-left">
-        <form method="POST" action="">
+        <form method="POST" action="{% url 'place_order' %}">
             {% csrf_token %}
             <input type="hidden" name="cart_cid" value="{{cart_cid}}">
             <input type = "text" name = "email_adress" placeholder="Adresa de livrare" , value = "{{ user.email }}" , required>
             <input type = "text" name = "first_name" placeholder="Nume" , value = "{{ user.first_name }}" , required>
             <input type = "text" name = "last_name" placeholder="Prenume" , value = "{{ user.last_name }}" , required>
             <input type = "text" name = "phone_number" placeholder="Numar de telefon" , value = "{{ user.phone_number }}" , required>
-            <input type = "text" name = "County" placeholder="Judet" , required>
-            <input type = "text" name = "Country" placeholder="Tara" , value = "Romania"  readonly , required>
-            <input type = "text" name = "Localitate" placeholder="Localitate" , required>
-            <input type = "text" name = "Cod_postal" placeholder="Cod postal" , required>
+            <input type = "text" name = "county" placeholder="Judet" , required>
+            <input type = "text" name = "country" placeholder="Tara" , value = "Romania"  readonly , required>
+            <input type = "text" name = "localitate" placeholder="Localitate" , required>
+            <input type = "text" name = "cod_postal" placeholder="Cod postal" , required>
             <input type = "text" name = "address" placeholder="Adresa de livrare" ,  required>
-            
-            <label class="container">FanCurier - 19.99 RON
-                <input type="radio" name="courier" value="FanCurier" checked>
+            {% for courier in couriers %}
+            <label class="container"> {{courier.name}} - {{courier.price}} RON
+                <input type="radio" name="courier" value="{{courier.id}}" required>
                     <span class="checkmark"></span>
             </label>
-
-            <label class="container">Cargus - 17.99 RON
-                <input type="radio" name="courier" value="Cargus">
-            <span class="checkmark"></span>
-            </label>
+            {% endfor %}
+            
 
             
             
@@ -34,9 +31,9 @@
     <div class ="checkout-right">
        
             <h1>Sumar Comanda</h1>
-            <p>Subtotal:  RON</p>
-            <p>Tax + Shipping: RON</p>
-            <p>Total:  RON</p>
+            <p>Subtotal: {{cart_total}} RON</p>
+            <p>Tax + Shipping: {{courier.price}} RON</p>
+            <p>Total: {{order.total}}  RON</p>
     </div>
 </div>
 {% endblock content %}

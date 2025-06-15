@@ -1,3 +1,6 @@
+
+  // rulează banner
+
 var bannerStatus = 1;
 var bannerTimer = 3000;
 window.onload = function(){

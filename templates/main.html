@@ -24,7 +24,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="{%static 'assets/js/warning.js' %}"></script>
-    <script src="{%static 'assets/js/banner.js' %}"></script>
     <script src="{%static 'assets/js/search_bar.js' %}"></script>
 </head>
 <body>
@@ -36,6 +35,7 @@
     {% endblock content %}
     </div>
     {% include 'footer.html' %}
+    {% block extra_js %}{% endblock %}
 </body>
 
 </html>

@@ -12,6 +12,7 @@ class Cart(models.Model):
     def __str__(self):
         return f"Cart {self.id} for {self.user.username}"
     def cart_total(self):
+        
         return sum(item.subtotal() for item in CartItem.objects.filter(cart=self))
 class CartItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)

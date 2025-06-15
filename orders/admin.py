@@ -6,7 +6,7 @@ class CourierAdmin(admin.ModelAdmin):
 admin.site.register(Courier, CourierAdmin)  
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['oid', 'user', 'total','courier','adress','created_at',  'updated_at', 'status']
+    list_display = ['oid', 'user', 'email', 'first_name', 'last_name','total','courier','adress','created_at',  'updated_at', 'status']
     list_filter = ['status']
 
 admin.site.register(Order, OrderAdmin)

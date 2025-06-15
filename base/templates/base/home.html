@@ -23,3 +23,7 @@
 
 
 {% endblock content %}
+{% load static %}
+{% block extra_js %}
+<script src="{% static 'assets/js/banner.js' %}"></script>
+{% endblock %}
