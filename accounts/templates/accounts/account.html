@@ -9,8 +9,6 @@
         <p><span class="username">Joined at {{ user.date_joined|date:"d M Y" }}</span>!</p>
     </div>
     <div class="user-actions">
-        <button class="action-btn">Informații</button>
-        <button class="action-btn">Setări</button>
         <a href = "{%url 'order_history'%}" class = "action-btn">Istoric Comenzi</a>
         <a href = "{%url 'sign-out'%}"><button class="logout-btn" >Log Out</button></a>
     </div>

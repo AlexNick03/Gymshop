@@ -17,7 +17,7 @@ def checkout(request):
                     messages.error(request, f'Out of stock for {item.product.title}')
                     item.delete()
                     return redirect('cart')
-                messages.info(request, f'Not enough stock for {item.product.title}. The current stock is {item.product.stock}')
+                messages.warning(request, f'Not enough stock for {item.product.title}. The current stock is {item.product.stock}')
                 return redirect('cart')  
         couriers = Courier.objects.all()
 
@@ -39,7 +39,7 @@ def place_order(request):
                     item.delete()
                     return redirect('cart')
                 
-                messages.info(request, f'Not enough stock for {item.product.title}. The current stock is {item.product.stock}')
+                messages.warning(request, f'Not enough stock for {item.product.title}. The current stock is {item.product.stock}')
 
                 return redirect('cart')   
                  

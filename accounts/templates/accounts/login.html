@@ -6,24 +6,11 @@
         
         <div class="form-container">
         {% if messages %}
-            {% for message in messages %}
-            {% if message.tags == error %}
-            <div id="message-container" class = "error-container">
-                <strong>{{message}}</strong>
-            </div>
-           
-            {% else %}
-            {% if message.tags == success %}
-            <div id="message-container" class = "success-container">
-                <strong>{{message}}</strong>
-            </div>
-            {% else %}
-            <div id="message-container" class = "warning-container">
-                <strong>{{message}}</strong>
-            </div>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
+        {% for message in messages %}
+        <div id="message-container" class="{{ message.tags }}-container">
+            <strong>{{ message }}</strong>
+        </div>
+        {% endfor %}
         {% endif %}
             <form id="loginForm"  method="POST">
                 {% csrf_token %}

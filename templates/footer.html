@@ -10,17 +10,18 @@
         </div>
         <div class="newsletter">
             <h2>Subscribe to our Newsletter</h2>
-            <form action="subscribe.php" method="post">
-                <input type="email" name="email" placeholder="Enter your email" required>
+            <form action="{% url 'subscribe' %}" method="POST">
+                {% csrf_token %}
+                <input hidden type="email" name="email" value ="{{user.email}}" >
                 <input type="submit" value="Subscribe">
             </form>
             <div class="social-media-links">
-                <a href="#" target="_blank">
+                <p  target="_blank">
                     <img src="{% static 'assets/images/instagram.png'%}" alt="Instagram">
-                </a>
-                <a href="#" target="_blank">
+                </p>
+                <p target="_blank">
                     <img src="{%static 'assets/images/facebook.png'%}" alt="Facebook">
-                </a>
+                </p>
             </div>
         </div>
     </div>

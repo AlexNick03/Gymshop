@@ -67,7 +67,7 @@ def activateEmail(request, user, to_email):
         mail_subject, message, to = [to_email]
     )
     if email.send() :
-        messages.success(request, 'Your account is not activated. Please check your email for the activation link.')
+        messages.warning(request, 'Your account is not activated. Please check your email for the activation link.')
     else:
         messages.error(request, 'There was an error sending the email. Please check if the email you''ve''enterd is valid.')
 
@@ -90,7 +90,7 @@ def activate(request, uidb64, token):
     else:
        
         if user.is_active:
-            messages.info(request, 'Your account is already activated.')
+            messages.warning(request, 'Your account is already activated.')
             return redirect('sign-in')
         else: 
             messages.error(request, 'Activation link is invalid! Try to login for a new activation link.')

@@ -1,7 +1,13 @@
 {% extends 'main.html' %}
 
 {% block content %}
-
+{% if messages %}
+  {% for message in messages %}
+    <div id="message-container" class="{{ message.tags }}-container">
+        <strong>{{ message }}</strong>
+    </div>
+  {% endfor %}
+{% endif %}
 <div id="main-banner" class="main-banner">
         <div class="imgban" id="imgban3">
             <div class="imgban-box">

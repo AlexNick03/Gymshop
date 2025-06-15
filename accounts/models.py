@@ -8,6 +8,7 @@ class User(AbstractUser):
     username = models.CharField(max_length=150, unique=True)
     USERNAME_FIELD = 'email'
     is_active = models.BooleanField(default=False)
+    is_subscribed = models.BooleanField(default=False)
     REQUIRED_FIELDS = ['username'] 
     def __str__(self):
         return self.username

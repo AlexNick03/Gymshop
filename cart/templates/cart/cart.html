@@ -2,27 +2,14 @@
 {% block content %}
 
 <div id="cart">
+  
   {% if messages %}
     {% for message in messages %}
-    {% if message.tags == error %}
-        <div id="message-container" class = "erorr-container">
-            {{ message }}
-        </div>
-    {% else %}
-    {% if message.tags == success %}
-            <div id="message-container" class = "success-container">
-                <strong>{{message}}</strong>
-            </div>
-    {% else %}
-        <div id="message-container" class = "warning-container">
-                <strong>{{message}}</strong>
-        </div>
-      {% endif %}    
-    {% endif %}
-
+      <div id="message-container" class="{{ message.tags }}-container">
+        <strong>{{ message }}</strong>
+      </div>
     {% endfor %}
-    
-{% endif %}
+  {% endif %}
   <div class="cart-container">
     
     <div class="cart-left">

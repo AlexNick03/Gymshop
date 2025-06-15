@@ -2,7 +2,7 @@ from django.contrib import admin
 from accounts.models import User
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['id', 'username', 'email', 'is_staff', 'is_active', 'is_superuser']
+    list_display = ['id', 'username', 'email', 'is_subscribed','is_staff', 'is_active', 'is_superuser']
 
 admin.site.register(User, UserAdmin)
 

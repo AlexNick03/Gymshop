@@ -3,14 +3,16 @@
 {% block content %}
 <div class="main-section">
     <div class="signup-div">
-    {% if form.errors %}
-        <div id="message-container" class="error-container">
-            <span id="error-message">
-                {% for field, errors in form.errors.items %}
-                    {{ errors.0 }} <br>
-                {% endfor %}
-            </span>
-        </div>
+   {% if form.errors %}
+    <div id="message-container" class="error-container">
+        <span id="error-message">
+            {% for field, errors in form.errors.items %}
+                {% if forloop.first %}
+                    {{ errors.0 }}
+                {% endif %}
+            {% endfor %}
+        </span>
+    </div>
     {% endif %}
         <div class="form-container">
             <form id="signUpForm"  method="POST">
