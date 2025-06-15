@@ -1,12 +1,17 @@
 services:
   - type: web
     name: gymshop
-    runtime: python
+    env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn gymshop.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: gymshop.settings
       - key: PYTHON_VERSION
-        value: 3.10
-    staticPublishPath: staticfiles
+        value: "3.11"
+      - key: SECRET_KEY
+        value: ${DJANGO_SECRET_KEY}
+      - key: DEBUG
+        value: "False"
+    autoDeploy: true

@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DEBUG')
 
 
-ALLOWED_HOSTS = ['gymshop.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['gymshop-6t6p.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
