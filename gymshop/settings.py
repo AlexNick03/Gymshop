@@ -28,7 +28,11 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DEBUG')
 
 
-ALLOWED_HOSTS = ['gymshop-6t6p.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    os.getenv('ALLOWED_HOSTS')
+]
 
 # Application definition
 
@@ -50,7 +54,11 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'verify_email.apps.VerifyEmailConfig',
     'taggit',
-    "django_htmx"
+    "django_htmx",
+
+    #server app
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -178,3 +186,10 @@ PASSWORD_RESET_TIMEOUT = 60
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
 TAGGIT_CASE_INSENSITIVE = True
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
+}

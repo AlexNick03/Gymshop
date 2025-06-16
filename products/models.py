@@ -2,7 +2,7 @@ from django.db import models
 from shortuuid.django_fields import ShortUUIDField
 from django.utils.html import mark_safe
 from taggit.managers import TaggableManager
-
+from cloudinary.models import CloudinaryField
 class Category(models.Model):
     cid =ShortUUIDField(unique=True, length=10, max_length=30, prefix='cat',alphabet='abcdefgh12345')
     title = models.CharField(max_length=255)
@@ -21,7 +21,7 @@ class Category(models.Model):
 class Product(models.Model):
     pid = ShortUUIDField(unique=True ,length=10, max_length=30, prefix='prd', alphabet='abcdefgh12345')
     title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='product_images', null=True, blank=True)
+    image = CloudinaryField('image', default='https://res.cloudinary.com/dwtlle4ic/image/upload/v1710000000/default.jpg')
     price = models.DecimalField(max_digits=100000, decimal_places=2, default=1.99)
     #old_price = models.DecimalField(max_digits=100000, decimal_places=2, null=True, blank=True, default=2.99)
     description = models.TextField(null=True, blank=True, default='This is the product')
@@ -49,7 +49,7 @@ class Product(models.Model):
     
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
-    images = models.ImageField(upload_to='product_images', default='product.jpg')
+    images = CloudinaryField('image', default='https://res.cloudinary.com/dwtlle4ic/image/upload/v1710000000/default.jpg')
     alt_text = models.CharField(max_length=255)
     is_featured = models.BooleanField(default=False)
     date = models.DateTimeField(auto_now_add=True)

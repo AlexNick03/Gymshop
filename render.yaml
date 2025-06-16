@@ -2,16 +2,19 @@ services:
   - type: web
     name: gymshop
     env: python
-    plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn gymshop.wsgi:application"
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: gunicorn gymshop.wsgi:application
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: gymshop.settings
-      - key: PYTHON_VERSION
-        value: "3.11"
-      - key: SECRET_KEY
-        value: ${DJANGO_SECRET_KEY}
       - key: DEBUG
         value: "False"
-    autoDeploy: true
+      - key: SECRET_KEY
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: ALLOWED_HOSTS
+        value: gymshop-6t6p.onrender.com
