@@ -19,4 +19,4 @@ services:
       - key: CLOUDINARY_API_SECRET
         sync: false
       - key: ALLOWED_HOSTS
-        value: gymshop-b2yx.onrender.com
+        value: gymshop-2d81.onrender.com
