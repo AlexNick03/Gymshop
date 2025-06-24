@@ -1,0 +1,1123 @@
+[
+  {
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+      "pid": "prd1ab2cd3e",
+      "title": "UltraWhey",
+      "image": "image/upload/product_images/proteina_3LJx4DP.jpg",
+      "price": "2.12",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 1555,
+      "featured": true,
+      "sku": "sku001",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+      "pid": "prd2bc3de4f",
+      "title": "MaxWhey",
+      "image": "image/upload/product_images/proteina_I2FjFZR.jpg",
+      "price": "1.97",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 3390,
+      "featured": false,
+      "sku": "sku002",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+      "pid": "prd3cd4ef5g",
+      "title": "ProMax",
+      "image": "image/upload/product_images/proteina_rAu4kwA.jpg",
+      "price": "2.54",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 523,
+      "featured": true,
+      "sku": "sku003",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+      "pid": "prd4de5fg6h",
+      "title": "LeanPro",
+      "image": "image/upload/product_images/proteina_wI3btUi.jpg",
+      "price": "1.35",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 0,
+      "featured": false,
+      "sku": "sku004",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+      "pid": "prd5ef6gh7i",
+      "title": "MassFusion",
+      "image": "image/upload/product_images/proteina_ltNdWQ0.jpg",
+      "price": "2.89",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 212,
+      "featured": true,
+      "sku": "sku005",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+      "pid": "prd6fg7hi8j",
+      "title": "PowerMix",
+      "image": "image/upload/product_images/proteina_fHIuerj.jpg",
+      "price": "1.54",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 318,
+      "featured": false,
+      "sku": "sku006",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+      "pid": "prd7gh8ij9k",
+      "title": "IsoPure",
+      "image": "image/upload/product_images/proteina_Ib16lBV.jpg",
+      "price": "2.43",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 5,
+      "featured": true,
+      "sku": "sku007",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+      "pid": "prd8hi9jk0l",
+      "title": "MaxWhey",
+      "image": "image/upload/product_images/proteina_G4dFe86.jpg",
+      "price": "1.99",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 4123,
+      "featured": false,
+      "sku": "sku008",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+      "pid": "prd9ij0kl1m",
+      "title": "UltraMass",
+      "image": "image/upload/product_images/proteina_kZyIFyK.jpg",
+      "price": "2.76",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 0,
+      "featured": true,
+      "sku": "sku009",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+      "pid": "prd0jk1lm2n",
+      "title": "HyperWhey",
+      "image": "image/upload/product_images/proteina.jpg",
+      "price": "2.24",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 436,
+      "featured": false,
+      "sku": "sku010",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+      "pid": "prd1kl2mn3o",
+      "title": "PumpFuel",
+      "image": "image/upload/product_images/prew_x7weSAJ.jpg",
+      "price": "1.49",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 402,
+      "featured": true,
+      "sku": "sku011",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 62,
+    "fields": {
+      "pid": "prd2lm3no4p",
+      "title": "RageBoost",
+      "image": "image/upload/product_images/prew_YNrbvBA.jpg",
+      "price": "2.58",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 612,
+      "featured": false,
+      "sku": "sku012",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 63,
+    "fields": {
+      "pid": "prd3mn4op5q",
+      "title": "NitroBlast",
+      "image": "image/upload/product_images/prew_wtyrd2c.jpg",
+      "price": "2.18",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 4123,
+      "featured": true,
+      "sku": "sku013",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 64,
+    "fields": {
+      "pid": "prd4no5pq6r",
+      "title": "StormForce",
+      "image": "image/upload/product_images/prew_JsA0F0M.jpg",
+      "price": "1.68",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 213,
+      "featured": false,
+      "sku": "sku014",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 65,
+    "fields": {
+      "pid": "prd5op6qr7s",
+      "title": "Ignite",
+      "image": "image/upload/product_images/prew.jpg",
+      "price": "1.83",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 443,
+      "featured": true,
+      "sku": "sku015",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 66,
+    "fields": {
+      "pid": "prd6pq7rs8t",
+      "title": "ChocoCrunch",
+      "image": "image/upload/product_images/baton_wVEIM1U.jpg",
+      "price": "1.47",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 321,
+      "featured": false,
+      "sku": "sku016",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 67,
+    "fields": {
+      "pid": "prd7qr8st9u",
+      "title": "EnergyBite",
+      "image": "image/upload/product_images/baton_0YapE2r.jpg",
+      "price": "2.64",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 200,
+      "featured": true,
+      "sku": "sku017",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 68,
+    "fields": {
+      "pid": "prd8rs9tu0v",
+      "title": "MaxBar",
+      "image": "image/upload/product_images/baton_siggPUE.jpg",
+      "price": "1.92",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 554,
+      "featured": false,
+      "sku": "sku018",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 69,
+    "fields": {
+      "pid": "prd9st0uv1w",
+      "title": "ProSnack",
+      "image": "image/upload/product_images/baton_DeqnoH6.jpg",
+      "price": "1.76",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 5321,
+      "featured": true,
+      "sku": "sku019",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 70,
+    "fields": {
+      "pid": "prd0tu1vw2x",
+      "title": "SnackPro",
+      "image": "image/upload/product_images/baton_v4bsmUh.jpg",
+      "price": "2.37",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 5523,
+      "featured": false,
+      "sku": "sku020",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 71,
+    "fields": {
+      "pid": "prd1uv2wx3y",
+      "title": "ChocoFuel",
+      "image": "image/upload/product_images/baton_rLXFfBf.jpg",
+      "price": "2.19",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 2312,
+      "featured": true,
+      "sku": "sku021",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 72,
+    "fields": {
+      "pid": "prd2vw3xy4z",
+      "title": "MonoCre",
+      "image": "image/upload/product_images/baton.jpg",
+      "price": "1.61",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 566,
+      "featured": false,
+      "sku": "sku022",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 73,
+    "fields": {
+      "pid": "prd3wx4yz5a",
+      "title": "MegaCre",
+      "image": "image/upload/product_images/creatina_mon_v4DbkAy.jpg",
+      "price": "2.48",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 5241,
+      "featured": true,
+      "sku": "sku023",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 74,
+    "fields": {
+      "pid": "prd4yz5ab6b",
+      "title": "UltraCre",
+      "image": "image/upload/product_images/creatina_mon_CcNynZN.jpg",
+      "price": "1.97",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 251,
+      "featured": false,
+      "sku": "sku024",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 75,
+    "fields": {
+      "pid": "prd5ab6bc7c",
+      "title": "PureCreatine",
+      "image": "image/upload/product_images/creatina_mon_NsLtpDj.jpg",
+      "price": "2.58",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 77,
+      "featured": true,
+      "sku": "sku025",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 76,
+    "fields": {
+      "pid": "prd6bc7cd8d",
+      "title": "HyperCre",
+      "image": "image/upload/product_images/creatina_mon_bJsPs5a.jpg",
+      "price": "1.89",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 123,
+      "featured": false,
+      "sku": "sku026",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 77,
+    "fields": {
+      "pid": "prd7cd8de9e",
+      "title": "CreX",
+      "image": "image/upload/product_images/creatina_mon_8cP6mkG.jpg",
+      "price": "2.11",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 542,
+      "featured": true,
+      "sku": "sku027",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 78,
+    "fields": {
+      "pid": "prd8de9ef0f",
+      "title": "BlastCre",
+      "image": "image/upload/product_images/creatina_mon_UggXk6R.jpg",
+      "price": "1.67",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 300,
+      "featured": false,
+      "sku": "sku028",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 79,
+    "fields": {
+      "pid": "prd9ef0fg1g",
+      "title": "CreForce",
+      "image": "image/upload/product_images/creatina_mon.jpg",
+      "price": "2.09",
+      "description": "This is the product",
+      "is_available": true,
+      "category": 1,
+      "specifications": "specification",
+      "stock": 260,
+      "featured": true,
+      "sku": "sku029",
+      "date": "2025-05-29T20:16:19Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 80,
+    "fields": {
+      "pid": "prdzzx001a",
+      "title": "Maieu Sport Negru",
+      "image": "image/upload/product_images/maieu_r1eGW7z.jpeg",
+      "price": "49.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Compoziție: 95% bumbac",
+      "stock": 25,
+      "featured": false,
+      "sku": "sku030",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 81,
+    "fields": {
+      "pid": "prdzzx002b",
+      "title": "Maieu Alb Clasic",
+      "image": "image/upload/product_images/maieu_re3YtTJ.jpeg",
+      "price": "44.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Material: respirabil",
+      "stock": 30,
+      "featured": false,
+      "sku": "sku031",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 82,
+    "fields": {
+      "pid": "prdzzx003c",
+      "title": "Maieu Slim Fit",
+      "image": "image/upload/product_images/maieu_d5SIewj.jpeg",
+      "price": "59.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Potrivire: Slim",
+      "stock": 4,
+      "featured": false,
+      "sku": "sku032",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 83,
+    "fields": {
+      "pid": "prdzzx004d",
+      "title": "Maieu Verde Neon",
+      "image": "image/upload/product_images/maieu_f2HBbcI.jpeg",
+      "price": "42.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Stil urban",
+      "stock": 17,
+      "featured": false,
+      "sku": "sku033",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 84,
+    "fields": {
+      "pid": "prdzzx005e",
+      "title": "Maieu Mesh Negru",
+      "image": "image/upload/product_images/maieu_bzmJvsh.jpeg",
+      "price": "51.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Respirabil",
+      "stock": 22,
+      "featured": false,
+      "sku": "sku034",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 85,
+    "fields": {
+      "pid": "prdzzx006f",
+      "title": "Hanorac Gri Oversized",
+      "image": "image/upload/product_images/hanorac_Xta19Ho.jpg",
+      "price": "99.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Interior fleece",
+      "stock": 17,
+      "featured": false,
+      "sku": "sku035",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 86,
+    "fields": {
+      "pid": "prdzzx007g",
+      "title": "Hanorac Negru Zipper",
+      "image": "image/upload/product_images/hanorac_xM5U5zy.jpg",
+      "price": "89.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Fermoar frontal",
+      "stock": 20,
+      "featured": false,
+      "sku": "sku036",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 87,
+    "fields": {
+      "pid": "prdzzx008h",
+      "title": "Hanorac Bleumarin Logo",
+      "image": "image/upload/product_images/hanorac_U71iKzF.jpg",
+      "price": "109.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Logo brodat",
+      "stock": 15,
+      "featured": false,
+      "sku": "sku037",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 88,
+    "fields": {
+      "pid": "prdzzx009i",
+      "title": "Hanorac Verde Urban",
+      "image": "image/upload/product_images/hanorac_ISM2hDx.jpg",
+      "price": "95.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Stil casual",
+      "stock": 21,
+      "featured": false,
+      "sku": "sku038",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 89,
+    "fields": {
+      "pid": "prdzzx010j",
+      "title": "Hanorac SportFit",
+      "image": "image/upload/product_images/hanorac_NqKiEM6.jpg",
+      "price": "105.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Potrivire sport",
+      "stock": 24,
+      "featured": false,
+      "sku": "sku039",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 90,
+    "fields": {
+      "pid": "prdzzx011k",
+      "title": "Shorts Negru Slim",
+      "image": "image/upload/product_images/shorts_cbMJpeZ.jpeg",
+      "price": "54.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Potrivire slim",
+      "stock": 21,
+      "featured": false,
+      "sku": "sku040",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 91,
+    "fields": {
+      "pid": "prdzzx012l",
+      "title": "Shorts Cargo Verde",
+      "image": "image/upload/product_images/shorts_7F3zn67.jpeg",
+      "price": "59.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Buzunare multiple",
+      "stock": 29,
+      "featured": false,
+      "sku": "sku041",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 92,
+    "fields": {
+      "pid": "prdzzx013m",
+      "title": "Shorts Denim Alb",
+      "image": "image/upload/product_images/shorts_tkfjw3M.jpeg",
+      "price": "49.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Look modern",
+      "stock": 23,
+      "featured": false,
+      "sku": "sku042",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 93,
+    "fields": {
+      "pid": "prdzzx014n",
+      "title": "Shorts Sport Dry",
+      "image": "image/upload/product_images/shorts_yXkiwuv.jpeg",
+      "price": "44.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Material rapid-uscare",
+      "stock": 20,
+      "featured": false,
+      "sku": "sku043",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 94,
+    "fields": {
+      "pid": "prdzzx015o",
+      "title": "Shorts Cu Elastic",
+      "image": "image/upload/product_images/shorts_fHFoTuU.jpeg",
+      "price": "39.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Elastic reglabil",
+      "stock": 25,
+      "featured": false,
+      "sku": "sku044",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 95,
+    "fields": {
+      "pid": "prdzzx016p",
+      "title": "Tricou Alb Basic",
+      "image": "image/upload/product_images/tricou_SoXWWmk.jpg",
+      "price": "39.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "100% bumbac",
+      "stock": 35,
+      "featured": false,
+      "sku": "sku045",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 96,
+    "fields": {
+      "pid": "prdzzx017q",
+      "title": "Tricou Oversized Negru",
+      "image": "image/upload/product_images/tricou_11w0I6k.jpg",
+      "price": "45.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Croială oversize",
+      "stock": 31,
+      "featured": false,
+      "sku": "sku046",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 97,
+    "fields": {
+      "pid": "prdzzx018r",
+      "title": "Tricou Grafic Urban",
+      "image": "image/upload/product_images/tricou_PEm8u19.jpg",
+      "price": "52.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Imprimeu grafic",
+      "stock": 27,
+      "featured": false,
+      "sku": "sku047",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 98,
+    "fields": {
+      "pid": "prdzzx019s",
+      "title": "Tricou Dri-Fit Albastru",
+      "image": "image/upload/product_images/tricou_ls2er8O.jpg",
+      "price": "48.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Tehnologie Dri-Fit",
+      "stock": 22,
+      "featured": false,
+      "sku": "sku048",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 99,
+    "fields": {
+      "pid": "prdzzx020t",
+      "title": "Tricou Retro",
+      "image": "image/upload/product_images/tricou_Wa5MtM1.jpg",
+      "price": "43.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Stil retro",
+      "stock": 29,
+      "featured": false,
+      "sku": "sku049",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 100,
+    "fields": {
+      "pid": "prdzzx021u",
+      "title": "Maieu Colorblock",
+      "image": "image/upload/product_images/maieu_nO9NIHJ.jpeg",
+      "price": "41.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Design colorblock",
+      "stock": 18,
+      "featured": false,
+      "sku": "sku050",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 101,
+    "fields": {
+      "pid": "prdzzx022v",
+      "title": "Hanorac Streetwear",
+      "image": "image/upload/product_images/hanorac_HZwZW6A.jpg",
+      "price": "114.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Stil street",
+      "stock": 19,
+      "featured": false,
+      "sku": "sku051",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 102,
+    "fields": {
+      "pid": "prdzzx023w",
+      "title": "Shorts Striați",
+      "image": "image/upload/product_images/shorts_furUVtX.jpeg",
+      "price": "47.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Detalii striate",
+      "stock": 17,
+      "featured": false,
+      "sku": "sku052",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 103,
+    "fields": {
+      "pid": "prdzzx024x",
+      "title": "Tricou Minimal Gri",
+      "image": "image/upload/product_images/tricou_6GPieUt.jpg",
+      "price": "39.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Look simplu",
+      "stock": 30,
+      "featured": false,
+      "sku": "sku053",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 104,
+    "fields": {
+      "pid": "prdzzx025y",
+      "title": "Shorts Termici",
+      "image": "image/upload/product_images/shorts_KOKuFxo.jpeg",
+      "price": "53.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Funcție termică",
+      "stock": 16,
+      "featured": false,
+      "sku": "sku054",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 105,
+    "fields": {
+      "pid": "prdzzx026z",
+      "title": "Hanorac Alb Logo",
+      "image": "image/upload/product_images/hanorac.jpg",
+      "price": "98.99",
+      "description": "Hanorac călduros cu design modern.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Logo frontal",
+      "stock": 20,
+      "featured": false,
+      "sku": "sku055",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 106,
+    "fields": {
+      "pid": "prdzzx027a",
+      "title": "Shorts Lejeri",
+      "image": "image/upload/product_images/shorts.jpeg",
+      "price": "45.99",
+      "description": "Pantaloni scurți confortabili.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Lejer și respirabil",
+      "stock": 21,
+      "featured": false,
+      "sku": "sku056",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 107,
+    "fields": {
+      "pid": "prdzzx028b",
+      "title": "Tricou Mesh Sport",
+      "image": "image/upload/product_images/tricou_ZRSvtXG.jpg",
+      "price": "49.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Inserții mesh",
+      "stock": 24,
+      "featured": false,
+      "sku": "sku057",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 108,
+    "fields": {
+      "pid": "prdzzx029c",
+      "title": "Tricou Portocaliu",
+      "image": "image/upload/product_images/tricou.jpg",
+      "price": "44.99",
+      "description": "Tricou casual din bumbac.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Culoare vibrantă",
+      "stock": 28,
+      "featured": false,
+      "sku": "sku058",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 109,
+    "fields": {
+      "pid": "prdzzx030d",
+      "title": "Maieu Clasic Gri",
+      "image": "image/upload/product_images/maieu.jpeg",
+      "price": "46.99",
+      "description": "Maieu sport ideal pentru vară.",
+      "is_available": true,
+      "category": 2,
+      "specifications": "Versatil și confortabil",
+      "stock": 26,
+      "featured": false,
+      "sku": "sku059",
+      "date": "2025-06-11T14:47:36Z",
+      "updated": null
+    }
+  }
+]
