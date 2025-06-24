@@ -18,6 +18,8 @@ packaging==25.0
 pillow==11.1.0
 PyJWT==2.9.0
 python-dotenv==1.0.1
+psycopg2-binary==2.9.6
+dj-database-url==1.0.0
 requests==2.32.4
 shortuuid==1.0.13
 six==1.17.0
