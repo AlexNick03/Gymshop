@@ -108,11 +108,11 @@ WSGI_APPLICATION = 'gymshop.wsgi.application'
     #}
 #}
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL')
+    "default": dj_database_url.config(
+        default=os.getenv("DATABASE_URL"),
+        engine="django.db.backends.postgresql",
     )
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
