@@ -18,9 +18,5 @@ __pycache__/
 *.bak
 # 🔥 Fișiere IMPORTANTE
 media/
-staticfiles/
-
-
 venv/
 .venv/
-

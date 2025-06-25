@@ -1,0 +1,57 @@
+.user-interface {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #181818;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+.user-profile h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.user-profile p {
+    color: #e0bbff;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.username {
+    color: violet;
+}
+
+.user-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-btn, .logout-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: violet;
+    color: white;
+}
+
+.action-btn:hover {
+    background-color: purple
+}
+
+.logout-btn {
+    background-color: violet;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: purple
+}
