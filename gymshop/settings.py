@@ -74,10 +74,10 @@ MIDDLEWARE = [
     "django_htmx.middleware.HtmxMiddleware"
 
 ]
-
+#Removing debug toolbar
 if DEBUG :
-    INSTALLED_APPS.append('debug_toolbar')
-    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+    INSTALLED_APPS += ['debug_toolbar']
+    MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware']
 
 CART_SESSION_ID = 'cart'
 ROOT_URLCONF = 'gymshop.urls'
