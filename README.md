@@ -41,7 +41,7 @@ This is a **personal project** under active learning and development. It’s not
 
 ---
 
-## 🙋‍♂️ Author
+## Author
 
 Developed by me — a self-taught Python developer exploring the world of web development through hands-on projects.
 
