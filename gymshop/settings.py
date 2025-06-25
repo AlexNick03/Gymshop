@@ -28,6 +28,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DEBUG')
 
 
+
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
@@ -47,7 +48,7 @@ INSTALLED_APPS = [
     
     #custom app
     'base.apps.BaseConfig',
-    'debug_toolbar',
+    
     'orders.apps.OrdersConfig',
     'cart.apps.CartConfig',
     'products.apps.ProductsConfig',
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -69,10 +71,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     "django_htmx.middleware.HtmxMiddleware"
 
 ]
+
+if DEBUG :
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
 CART_SESSION_ID = 'cart'
 ROOT_URLCONF = 'gymshop.urls'
