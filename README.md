@@ -26,7 +26,7 @@ The project was created primarily for learning purposes, and it helped me unders
 - **Environment**: Local development & basic production testing
 
 ---
-![System diagram](Diagrame/GymShop System Arhitecture.png)
+![System diagram](Diagrame/GymShop%20System%20Arhitecture.png)
 ## System Architecture
 
 
