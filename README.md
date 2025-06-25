@@ -26,10 +26,10 @@ The project was created primarily for learning purposes, and it helped me unders
 - **Environment**: Local development & basic production testing
 
 ---
-
+![System diagram](Diagrame/GymShop%20System%20Arhitecture.png)
 ## System Architecture
 
-_(Insert diagram here)_
+
 
 The system is made up of a Django backend that connects to Supabase (PostgreSQL) and handles static & dynamic content, while product images are uploaded to Cloudinary. The admin panel allows full control over product listings and categories.
 
