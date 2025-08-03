@@ -1,4 +1,4 @@
-#  GymShop – eCommerce Presentation Website LINK : https://gymshop-2d81.onrender.com
+#  GymShop – eCommerce Presentation Website LINK : https://gymshop-iil3.onrender.com
 
 **GymShop** is an early-stage eCommerce startup concept, and this project represents its first iteration — a product presentation website built entirely with **Django** on the backend and basic **HTML/CSS/JS** on the frontend.
 
